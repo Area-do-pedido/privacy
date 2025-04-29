@@ -98,11 +98,11 @@
     <!-- Content Stats -->
     <div class="content-stats bg-white">
       <div class="content-stat">
-        <span class="text-lg font-medium text-orange-400">80</span>
-        <p class="text-gray-600 text-sm">posts</p>
+        <span class="text-lg font-medium text-orange-400">345k</span>
+        <p class="text-gray-600 text-sm">Seguidores</p>
       </div>
       <div class="content-stat">
-        <span class="text-lg font-medium text-orange-400">57</span>
+        <span class="text-lg font-medium text-orange-400">107</span>
         <p class="text-gray-600 text-sm">mídias</p>
       </div>
       <div class="content-stat">
@@ -129,14 +129,14 @@
       </div>
 
       <button id="plan-1month" class="subscription-btn" onclick="handleSubscriptionClick('1month')">
-        <span class="text-lg font-medium">Mensal</span>
-        <span class="text-lg font-medium">R$ 45,00</span>
+        <span class="text-lg font-medium">Quinzenal</span>
+        <span class="text-lg font-medium">R$ 19.90</span>
       </button>
 
       <div class="mt-3 space-y-2">
         <button id="plan-3months" class="subscription-btn" onclick="handleSubscriptionClick('3months')">
-          <span class="text-lg font-medium">Trimestral</span>
-          <span class="text-lg font-medium">R$ 135,00</span>
+          <span class="text-lg font-medium">Mensal</span>
+          <span class="text-lg font-medium">R$ 29.90</span>
         </button>
         
         <!-- CORRIGIDO POSIÇÃO DA TAG POPULAR -->
@@ -145,8 +145,8 @@
             Popular
           </div>
           <button id="plan-6months" class="subscription-btn" onclick="handleSubscriptionClick('6months')">
-            <span class="text-lg font-medium">Semestral</span>
-            <span class="text-lg font-medium">R$ 270,00</span>
+            <span class="text-lg font-medium">Trimestral</span>
+            <span class="text-lg font-medium">R$ 44.90</span>
           </button>
         </div>
       </div>
@@ -239,7 +239,7 @@
               <div class="flex items-center gap-4">
                 <div class="flex items-center">
                   <i class="fa-solid fa-image text-gray-500 mr-2"></i>
-                  <span>215</span>
+                  <span>28</span>
                 </div>
                 <div class="flex items-center">
                   <i class="fa-solid fa-heart text-gray-500 mr-2"></i>
@@ -338,7 +338,7 @@
               <div class="flex items-center gap-4">
                 <div class="flex items-center">
                   <i class="fa-solid fa-image text-gray-500 mr-2"></i>
-                  <span>183</span>
+                  <span>18</span>
                 </div>
                 <div class="flex items-center">
                   <i class="fa-solid fa-heart text-gray-500 mr-2"></i>
@@ -483,7 +483,7 @@
               <div class="flex items-center gap-4">
                 <div class="flex items-center">
                   <i class="fa-solid fa-image text-gray-500 mr-2"></i>
-                  <span>247</span>
+                  <span>24</span>
                 </div>
                 <div class="flex items-center">
                   <i class="fa-solid fa-heart text-gray-500 mr-2"></i>
@@ -577,7 +577,7 @@
               <div class="flex items-center gap-4">
                 <div class="flex items-center">
                   <i class="fa-solid fa-image text-gray-500 mr-2"></i>
-                  <span>198</span>
+                  <span>23</span>
                 </div>
                 <div class="flex items-center">
                   <i class="fa-solid fa-heart text-gray-500 mr-2"></i>
@@ -609,7 +609,7 @@
             <div class="video-duration">3:45</div>
             <div class="video-views">
               <i class="fa-solid fa-eye" style="font-size: 0.75rem;"></i>
-              <span>842</span>
+              <span>4.9k</span>
             </div>
           </div>
         </div>
@@ -624,7 +624,7 @@
             <div class="video-duration">5:12</div>
             <div class="video-views">
               <i class="fa-solid fa-eye" style="font-size: 0.75rem;"></i>
-              <span>1.2K</span>
+              <span>19.2K</span>
             </div>
           </div>
         </div>
@@ -667,10 +667,10 @@
 
   <!-- Footer Actions -->
   <div class="footer-actions">
-    <button class="btn btn-ghost btn-icon">
+    <button class="btn btn-ghost btn-icon" id="heart-button">
       <i class="fa-solid fa-heart fa-lg"></i>
     </button>
-    <button class="btn btn-ghost btn-icon">
+    <button class="btn btn-ghost btn-icon" id="chat-button">
       <i class="fa-solid fa-comment fa-lg"></i>
     </button>
     <button class="btn btn-ghost btn-icon">
@@ -701,14 +701,69 @@
     </div>
   </div>
 
+  <!-- Chat Modal -->
+  <div class="modal-backdrop" id="chat-modal">
+    <div class="modal">
+      <div class="modal-body p-6 text-center">
+        <div class="mx-auto w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+          <i class="fa-solid fa-comment text-orange-500 fa-lg"></i>
+        </div>
+        <h2 class="text-xl font-semibold mb-2">Chat Exclusivo</h2>
+        <p class="text-gray-600 mb-4">
+          Ative um dos planos para poder conversar com nossas criadoras agora mesmo!
+        </p>
+        <div class="flex gap-2">
+          <button class="btn btn-outline w-full" onclick="closeChatModal()">
+            Cancelar
+          </button>
+          <button class="btn btn-primary w-full" onclick="scrollToSubscription(); closeChatModal();">
+            Ver Planos
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script>
   // Initialize all JS functionality
   document.addEventListener('DOMContentLoaded', function() {
+    // Setup heart button
+    const heartButton = document.getElementById('heart-button');
+    if (heartButton) {
+      heartButton.addEventListener('click', function() {
+        const heartIcon = this.querySelector('i');
+        if (heartIcon.classList.contains('text-red-500')) {
+          heartIcon.classList.remove('text-red-500');
+        } else {
+          heartIcon.classList.add('text-red-500');
+        }
+      });
+    }
+
+    // Setup chat button
+    const chatButton = document.getElementById('chat-button');
+    if (chatButton) {
+      chatButton.addEventListener('click', function() {
+        const chatModal = document.getElementById('chat-modal');
+        if (chatModal) {
+          chatModal.classList.add('active');
+        }
+      });
+    }
+
     // Initialize any functions from script.js
     if (typeof initializeApp === 'function') {
       initializeApp();
     }
   });
+
+  // Function to close chat modal
+  function closeChatModal() {
+    const chatModal = document.getElementById('chat-modal');
+    if (chatModal) {
+      chatModal.classList.remove('active');
+    }
+  }
 </script>
 </body>
 </html>
