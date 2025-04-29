@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Collection</title>
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Ensure the script is properly referenced -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <div class="logo-img">
+        <i class="fa-solid fa-lock"></i>
+      </div>
+      <span class="logo-text">privacy</span>
+    </div>
+    <div class="header-actions">
+      <div class="relative" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; color: #6b7280;">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="badge">1</span>
+      </div>
+      <button class="btn btn-icon btn-ghost">
+        <i class="fa-solid fa-globe"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Profile Header - BANNER COMPLETAMENTE REMOVIDO -->
+    <!-- Find the profile avatars at the top and add live indicators to the second and third ones -->
+<div class="p-4 bg-white flex flex-row items-center justify-between">
+  <div class="flex items-center">
+    <div class="profile-avatar" style="z-index: 5; width: 40px; height: 40px;">
+      <img src="https://i.ibb.co/7xKH2CkZ/avatar2.webp" alt="avatar2" border="0">
+    </div>
+    <div class="profile-avatar relative" style="z-index: 4; width: 40px; height: 40px; margin-left: -8px; border: 2px solid #ef4444;">
+      <img src="https://i.ibb.co/DfFnrdHD/caiocastroperfil.jpg" alt="caiocastroperfil" border="0">
+      <div style="position: absolute; bottom: -8px; left: 50%; transform: translateX(-50%); background-color: #ef4444; color: white; font-size: 8px; padding: 1px 3px; border-radius: 2px; font-weight: bold; z-index: 10;">
+        AO VIVO
+      </div>
+    </div>
+    <div class="profile-avatar relative" style="z-index: 3; width: 40px; height: 40px; margin-left: -8px; border: 2px solid #ef4444;">
+      <img src="https://i.ibb.co/6c2rZZsp/avatar1.png" alt="avatar1" border="0">
+      <div style="position: absolute; bottom: -8px; left: 50%; transform: translateX(-50%); background-color: #ef4444; color: white; font-size: 8px; padding: 1px 3px; border-radius: 2px; font-weight: bold; z-index: 10;">
+        AO VIVO
+      </div>
+    </div>
+    <div class="profile-avatar" style="z-index: 2; width: 40px; height: 40px; margin-left: -8px;">
+      <img src="https://i.ibb.co/39G7gkzN/simariaperfil.png" alt="simariaperfil" border="0">
+    </div>
+    <div class="profile-avatar-more" style="width: 40px; height: 40px; margin-left: -8px;">
+      +1
+    </div>
+  </div>
+  
+  <!-- Profile Stats -->
+  <div class="flex text-xs text-gray-600 items-center">
+    <div class="flex items-center mr-3">
+      <i class="fa-solid fa-image mr-1" style="font-size: 0.75rem;"></i>
+      <span>137</span>
+    </div>
+    <div class="flex items-center mr-3">
+      <i class="fa-solid fa-comment mr-1" style="font-size: 0.75rem;"></i>
+      <span>132.765</span>
+    </div>
+    <div class="flex items-center">
+      <i class="fa-solid fa-heart mr-1" style="font-size: 0.75rem;"></i>
+      <span>878k+</span>
+    </div>
+  </div>
+</div>
+
+    <!-- Profile Info -->
+    <div class="profile-info">
+      <div class="flex items-center justify-between">
+        <div>
+          <h1 class="text-xl font-semibold text-gray-800">Privacy Collection</h1>
+          <p class="text-gray-600">@privacycollection</p>
+        </div>
+        <button class="btn btn-icon btn-ghost bg-gray-100 rounded-full">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+      <p class="mt-2 text-gray-700" id="bio-text">
+      Oi amores! Vocês já nós conhecem das redes sociais, agora é a hora de vocês conhecerem o nosso lado mais malvadinhas rsrs!
+        <br><br>
+        Aqui você verá fotos, vídeos e as vezes lives bem explícitas feitas por nós sozinhas ou acompanhadas, então venham se divertir com a gente 😈
+      </p>
+    
+
+     
+    <!-- Content Stats -->
+    <div class="content-stats bg-white">
+      <div class="content-stat">
+        <span class="text-lg font-medium text-orange-400">80</span>
+        <p class="text-gray-600 text-sm">posts</p>
+      </div>
+      <div class="content-stat">
+        <span class="text-lg font-medium text-orange-400">57</span>
+        <p class="text-gray-600 text-sm">mídias</p>
+      </div>
+      <div class="content-stat">
+        <span class="text-lg font-medium text-orange-400">5</span>
+        <p class="text-gray-600 text-sm">modelos</p>
+      </div>
+    </div>
+
+    <!-- Subscription Section -->
+    <div class="p-3 bg-white" id="subscription-section">
+      <div class="flex items-center justify-between mb-2">
+        <h2 class="text-lg font-medium text-gray-800">Assinaturas</h2>
+        <div class="text-sm text-orange-500 font-medium flex items-center">
+          <i class="fa-solid fa-users mr-2" style="font-size: 1rem;"></i>
+          Acesso a todas as modelos
+        </div>
+      </div>
+
+      <div class="bg-orange-50 rounded-lg p-3 mb-3 text-sm text-gray-700 flex items-start">
+        <i class="fa-solid fa-star text-orange-400 mr-2 mt-0.5" style="font-size: 1.25rem;"></i>
+        <p>
+          Assine agora e tenha acesso permanente ao conteúdo exclusivo e lives das influencers por um único preço!
+        </p>
+      </div>
+
+      <button id="plan-1month" class="subscription-btn" onclick="handleSubscriptionClick('1month')">
+        <span class="text-lg font-medium">Mensal</span>
+        <span class="text-lg font-medium">R$ 45,00</span>
+      </button>
+
+      <div class="mt-3 space-y-2">
+        <button id="plan-3months" class="subscription-btn" onclick="handleSubscriptionClick('3months')">
+          <span class="text-lg font-medium">Trimestral</span>
+          <span class="text-lg font-medium">R$ 135,00</span>
+        </button>
+        
+        <!-- CORRIGIDO POSIÇÃO DA TAG POPULAR -->
+        <div style="position: relative; padding-top: 12px;">
+          <div style="position: absolute; top: 0; right: 16px; padding: 2px 8px; background-color: white; color: #f97316; font-size: 0.75rem; border-radius: 9999px; font-weight: bold; z-index: 10;">
+            Popular
+          </div>
+          <button id="plan-6months" class="subscription-btn" onclick="handleSubscriptionClick('6months')">
+            <span class="text-lg font-medium">Semestral</span>
+            <span class="text-lg font-medium">R$ 270,00</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Models Section -->
+    <div class="p-3 mt-0 bg-white">
+      <h2 class="mb-2 text-lg font-medium text-gray-800">Nossas Modelos</h2>
+      
+      <!-- Todas as modelos em um único layout -->
+      <div class="space-y-3">
+        <!-- Júlia Card - COM VÍDEO DE AMOSTRA -->
+        <div class="card">
+          <div class="card-content">
+            <div class="p-3 flex items-center justify-between border-b">
+              <div class="flex items-center gap-2">
+                <div class="avatar">
+                 <img src="https://i.ibb.co/7xKH2CkZ/avatar2.webp" alt="avatar2" border="0">
+                </div>
+                <div>
+                  <p class="font-medium text-gray-800">Kamyla Santos</p>
+                  <p class="text-xs text-gray-500">@kamylinhasantosn</p>
+                </div>
+              </div>
+              <button class="btn btn-ghost text-xs text-orange-500" onclick="scrollToSubscription()">
+                Ver perfil
+              </button>
+            </div>
+
+            <!-- Vídeo de amostra -->
+            <div class="model-preview">
+              <p class="text-sm text-gray-700 mb-3">
+                18 Anos! Modelo, dançarina profissional e influencer.
+              </p>
+              
+              <!-- Área para vídeo de amostra -->
+              <div class="preview-video-container">
+                <!-- Substitua o src pelo URL do seu vídeo de amostra -->
+               <div style="max-width: 360px; margin: auto;">
+<video 
+  autoplay 
+  muted 
+  playsinline 
+  loop 
+  preload="metadata" 
+  style="
+    width: 100%; 
+    max-width: 320px; 
+    height: auto;
+    display: block; 
+    margin: 30px auto;
+    border-radius: 25px;
+    box-shadow: 0 0 20px rgba(255, 108, 55, 0.6), 0 0 40px rgba(255, 108, 55, 0.3);
+    border: 4px solid #FF6C37;
+  ">
+  <source src="https://archive.org/download/ssstik.io_1745526547407/ssstik.io_1745526547407.mp4" type="video/mp4">
+  Seu navegador não suporta vídeo HTML5.
+</video>
+
+
+              </div>
+              
+              <!-- Conteúdo bloqueado em miniatura -->
+              <div class="model-content-preview mt-3">
+                <div class="grid grid-cols-3 gap-2">
+                  <div class="small-thumbnail" onclick="scrollToSubscription()">
+                    <img src="https://placehold.co/200x200/1f1f1f/333333?text=1" alt="Conteúdo 1" class="filter blur-sm opacity-60">
+                    <div class="absolute inset-0 flex items-center justify-center bg-black/30">
+                      <i class="fa-solid fa-lock text-white"></i>
+                    </div>
+                  </div>
+                  <div class="small-thumbnail" onclick="scrollToSubscription()">
+                    <img src="https://placehold.co/200x200/1f1f1f/333333?text=2" alt="Conteúdo 2" class="filter blur-sm opacity-60">
+                    <div class="absolute inset-0 flex items-center justify-center bg-black/30">
+                      <i class="fa-solid fa-lock text-white"></i>
+                    </div>
+                  </div>
+                  <div class="small-thumbnail" onclick="scrollToSubscription()">
+                    <img src="https://placehold.co/200x200/1f1f1f/333333?text=3" alt="Conteúdo 3" class="filter blur-sm opacity-60">
+                    <div class="absolute inset-0 flex items-center justify-center bg-black/30">
+                      <i class="fa-solid fa-lock text-white"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CORRIGIDO ESPAÇAMENTO ENTRE ÍCONES E NÚMEROS -->
+            <div class="p-3 flex items-center justify-between text-sm">
+              <div class="flex items-center gap-4">
+                <div class="flex items-center">
+                  <i class="fa-solid fa-image text-gray-500 mr-2"></i>
+                  <span>215</span>
+                </div>
+                <div class="flex items-center">
+                  <i class="fa-solid fa-heart text-gray-500 mr-2"></i>
+                  <span>18.2K</span>
+                </div>
+              </div>
+              <button class="btn btn-ghost text-xs text-orange-500" onclick="scrollToSubscription()">
+                Desbloquear
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Amanda Card -->
+        <div class="card">
+          <div class="card-content">
+            <!-- Find the second profile (MC Melody) and add the live indicator -->
+<div class="p-3 flex items-center justify-between border-b">
+  <div class="flex items-center gap-2">
+    <div class="avatar relative">
+      <img src="https://i.ibb.co/DfFnrdHD/caiocastroperfil.jpg" alt="caiocastroperfil" border="0" style="border: 2px solid #ef4444;">
+      <div style="position: absolute; bottom: -8px; left: 50%; transform: translateX(-50%); background-color: #ef4444; color: white; font-size: 10px; padding: 1px 4px; border-radius: 2px; font-weight: bold;">
+        AO VIVO
+      </div>
+    </div>
+    <div>
+      <p class="font-medium text-gray-800">MC Melody</p>
+      <p class="text-xs text-gray-500">@melodyoficial3</p>
+    </div>
+  </div>
+  <button class="btn btn-ghost text-xs text-orange-500" onclick="scrollToSubscription()">
+    Ver perfil
+  </button>
+</div>
+
+            <!-- Conteúdo bloqueado com vídeo de amostra -->
+            <div class="model-preview">
+              <p class="text-sm text-gray-700 mb-3">
+                18 Anos! Cantora, dançarina profissional e influencer.
+              </p>
+              
+              <!-- Área para vídeo de amostra -->
+              <div class="preview-video-container">
+                <!-- Substitua o src pelo URL do seu vídeo de amostra -->
+<video 
+  autoplay 
+  muted 
+  playsinline 
+  loop 
+  preload="metadata" 
+  style="
+    width: 100%; 
+    max-width: 320px; 
+    height: auto;
+    display: block; 
+    margin: 30px auto;
+    border-radius: 25px;
+    box-shadow: 0 0 20px rgba(255, 108, 55, 0.6), 0 0 40px rgba(255, 108, 55, 0.3);
+    border: 4px solid #FF6C37;
+  ">
+  <source src="https://archive.org/download/melody01/melody01.mp4" type="video/mp4">
+  Seu navegador não suporta vídeo HTML5.
+</video>
+
+
+
+              </div>
+              
+              <!-- Conteúdo bloqueado em miniatura -->
+              <div class="model-content-preview mt-3">
+                <div class="grid grid-cols-3 gap-2">
+                  <div class="small-thumbnail" onclick="scrollToSubscription()">
+                    <img src="https://placehold.co/200x200/1f1f1f/333333?text=1" alt="Conteúdo 1" class="filter blur-sm opacity-60">
+                    <div class="absolute inset-0 flex items-center justify-center bg-black/30">
+                      <i class="fa-solid fa-lock text-white"></i>
+                    </div>
+                  </div>
+                  <div class="small-thumbnail" onclick="scrollToSubscription()">
+                    <img src="https://placehold.co/200x200/1f1f1f/333333?text=2" alt="Conteúdo 2" class="filter blur-sm opacity-60">
+                    <div class="absolute inset-0 flex items-center justify-center bg-black/30">
+                      <i class="fa-solid fa-lock text-white"></i>
+                    </div>
+                  </div>
+                  <div class="small-thumbnail" onclick="scrollToSubscription()">
+                    <img src="https://placehold.co/200x200/1f1f1f/333333?text=3" alt="Conteúdo 3" class="filter blur-sm opacity-60">
+                    <div class="absolute inset-0 flex items-center justify-center bg-black/30">
+                      <i class="fa-solid fa-lock text-white"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CORRIGIDO ESPAÇAMENTO ENTRE ÍCONES E NÚMEROS -->
+            <div class="p-3 flex items-center justify-between text-sm">
+              <div class="flex items-center gap-4">
+                <div class="flex items-center">
+                  <i class="fa-solid fa-image text-gray-500 mr-2"></i>
+                  <span>183</span>
+                </div>
+                <div class="flex items-center">
+                  <i class="fa-solid fa-heart text-gray-500 mr-2"></i>
+                  <span>12.5K</span>
+                </div>
+              </div>
+              <button class="btn btn-ghost text-xs text-orange-500" onclick="scrollToSubscription()">
+                Desbloquear
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carla Card -->
+        <div class="card">
+          <div class="card-content">
+            <!-- Find the third profile (MEL MAIA) and add the live indicator -->
+<div class="p-3 flex items-center justify-between border-b">
+  <div class="flex items-center gap-2">
+    <div class="avatar relative">
+      <img src="https://i.ibb.co/6c2rZZsp/avatar1.png" alt="avatar1" border="0" style="border: 2px solid #ef4444;">
+      <div style="position: absolute; bottom: -8px; left: 50%; transform: translateX(-50%); background-color: #ef4444; color: white; font-size: 10px; padding: 1px 4px; border-radius: 2px; font-weight: bold;">
+        AO VIVO
+      </div>
+    </div>
+    <div>
+      <p class="font-medium text-gray-800">MEL MAIA</p>
+      <p class="text-xs text-gray-500">@melissamelmaia</p>
+    </div>
+  </div>
+  <button class="btn btn-ghost text-xs text-orange-500" onclick="scrollToSubscription()">
+    Ver perfil
+  </button>
+</div>
+
+            <!-- Conteúdo bloqueado com vídeo de amostra -->
+            <div class="model-preview">
+              <p class="text-sm text-gray-700 mb-3">
+             19 Anos! Atriz, dançarina profissional e influencer.
+              </p>
+              
+              <!-- Área para vídeo de amostra -->
+              <div class="preview-video-container">
+               <style>
+  .story-wrapper {
+    position: relative;
+    max-width: 360px;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .story-carousel {
+    display: flex;
+    transition: transform 0.4s ease;
+    width: calc(360px * 2); /* 2 imagens */
+  }
+
+  .story-carousel img {
+    width: 360px;
+    height: 640px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    flex-shrink: 0;
+  }
+
+  .arrow-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 50%;
+  }
+
+  .arrow-left {
+    left: 10px;
+  }
+
+  .arrow-right {
+    right: 10px;
+  }
+</style>
+
+<div class="story-wrapper">
+  <button class="arrow-btn arrow-left" onclick="moveStory(-1)">⟨</button>
+  <div class="story-carousel" id="carousel">
+    <img src="https://i.ibb.co/wZcmVXqQ/3-1.png" alt="Story 1">
+    <img src="https://i.ibb.co/svhnwZ0R/1-2.png" alt="Story 2">
+  </div>
+  <button class="arrow-btn arrow-right" onclick="moveStory(1)">⟩</button>
+</div>
+
+<script>
+  let currentIndex = 0;
+  const carousel = document.getElementById('carousel');
+  const storyWidth = 360;
+
+  function moveStory(direction) {
+    const totalItems = carousel.children.length;
+    currentIndex += direction;
+    if (currentIndex < 0) currentIndex = 0;
+    if (currentIndex >= totalItems) currentIndex = totalItems - 1;
+    carousel.style.transform = `translateX(-${storyWidth * currentIndex}px)`;
+  }
+</script>
+
+              </div>
+              
+              <!-- Conteúdo bloqueado em miniatura -->
+              <div class="model-content-preview mt-3">
+                <div class="grid grid-cols-3 gap-2">
+                  <div class="small-thumbnail" onclick="scrollToSubscription()">
+                    <img src="https://placehold.co/200x200/1f1f1f/333333?text=1" alt="Conteúdo 1" class="filter blur-sm opacity-60">
+                    <div class="absolute inset-0 flex items-center justify-center bg-black/30">
+                      <i class="fa-solid fa-lock text-white"></i>
+                    </div>
+                  </div>
+                  <div class="small-thumbnail" onclick="scrollToSubscription()">
+                    <img src="https://placehold.co/200x200/1f1f1f/333333?text=2" alt="Conteúdo 2" class="filter blur-sm opacity-60">
+                    <div class="absolute inset-0 flex items-center justify-center bg-black/30">
+                      <i class="fa-solid fa-lock text-white"></i>
+                    </div>
+                  </div>
+                  <div class="small-thumbnail" onclick="scrollToSubscription()">
+                    <img src="https://placehold.co/200x200/1f1f1f/333333?text=3" alt="Conteúdo 3" class="filter blur-sm opacity-60">
+                    <div class="absolute inset-0 flex items-center justify-center bg-black/30">
+                      <i class="fa-solid fa-lock text-white"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CORRIGIDO ESPAÇAMENTO ENTRE ÍCONES E NÚMEROS -->
+            <div class="p-3 flex items-center justify-between text-sm">
+              <div class="flex items-center gap-4">
+                <div class="flex items-center">
+                  <i class="fa-solid fa-image text-gray-500 mr-2"></i>
+                  <span>247</span>
+                </div>
+                <div class="flex items-center">
+                  <i class="fa-solid fa-heart text-gray-500 mr-2"></i>
+                  <span>22.7K</span>
+                </div>
+              </div>
+              <button class="btn btn-ghost text-xs text-orange-500" onclick="scrollToSubscription()">
+                Desbloquear
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Beatriz Card -->
+        <div class="card">
+          <div class="card-content">
+            <div class="p-3 flex items-center justify-between border-b">
+              <div class="flex items-center gap-2">
+                <div class="avatar">
+                 <img src="https://i.ibb.co/39G7gkzN/simariaperfil.png" alt="simariaperfil" border="0">
+                </div>
+                <div>
+                  <p class="font-medium text-gray-800">Simaria Mendes</p>
+                  <p class="text-xs text-gray-500">@simaria</p>
+                </div>
+              </div>
+              <button class="btn btn-ghost text-xs text-orange-500" onclick="scrollToSubscription()">
+                Ver perfil
+              </button>
+            </div>
+
+            <!-- Conteúdo bloqueado com vídeo de amostra -->
+            <div class="model-preview">
+              <p class="text-sm text-gray-700 mb-3">
+              24 Anos! Cantora e influencer.
+              </p>
+              
+              <!-- Área para vídeo de amostra -->
+              <div class="preview-video-container">
+                <!-- Substitua o src pelo URL do seu vídeo de amostra -->
+               <div style="max-width: 360px; margin: auto;">
+<video 
+  autoplay 
+  muted 
+  playsinline 
+  loop 
+  preload="metadata" 
+  style="
+    width: 100%; 
+    max-width: 320px; 
+    display: block; 
+    margin: 30px auto;
+    border-radius: 25px;
+    box-shadow: 0 0 20px rgba(255, 108, 55, 0.6), 0 0 40px rgba(255, 108, 55, 0.3);
+    border: 4px solid #FF6C37;
+  ">
+  <source src="https://archive.org/download/kamy03/kamy03.mp4" type="video/mp4">
+  Seu navegador não suporta vídeo HTML5.
+</video>
+
+
+              </div>
+              
+              <!-- Conteúdo bloqueado em miniatura -->
+              <div class="model-content-preview mt-3">
+                <div class="grid grid-cols-3 gap-2">
+                  <div class="small-thumbnail" onclick="scrollToSubscription()">
+                    <img src="https://placehold.co/200x200/1f1f1f/333333?text=1" alt="Conteúdo 1" class="filter blur-sm opacity-60">
+                    <div class="absolute inset-0 flex items-center justify-center bg-black/30">
+                      <i class="fa-solid fa-lock text-white"></i>
+                    </div>
+                  </div>
+                  <div class="small-thumbnail" onclick="scrollToSubscription()">
+                    <img src="https://placehold.co/200x200/1f1f1f/333333?text=2" alt="Conteúdo 2" class="filter blur-sm opacity-60">
+                    <div class="absolute inset-0 flex items-center justify-center bg-black/30">
+                      <i class="fa-solid fa-lock text-white"></i>
+                    </div>
+                  </div>
+                  <div class="small-thumbnail" onclick="scrollToSubscription()">
+                    <img src="https://placehold.co/200x200/1f1f1f/333333?text=3" alt="Conteúdo 3" class="filter blur-sm opacity-60">
+                    <div class="absolute inset-0 flex items-center justify-center bg-black/30">
+                      <i class="fa-solid fa-lock text-white"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CORRIGIDO ESPAÇAMENTO ENTRE ÍCONES E NÚMEROS -->
+            <div class="p-3 flex items-center justify-between text-sm">
+              <div class="flex items-center gap-4">
+                <div class="flex items-center">
+                  <i class="fa-solid fa-image text-gray-500 mr-2"></i>
+                  <span>198</span>
+                </div>
+                <div class="flex items-center">
+                  <i class="fa-solid fa-heart text-gray-500 mr-2"></i>
+                  <span>15.9K</span>
+                </div>
+              </div>
+              <button class="btn btn-ghost text-xs text-orange-500" onclick="scrollToSubscription()">
+                Desbloquear
+              </button>
+            </div>
+          </div>
+        </div>
+
+
+
+    <!-- Featured Videos -->
+    <div class="p-3 mt-0 bg-white">
+      <h2 class="mb-3 text-lg font-medium text-gray-800">Vídeos em Destaque</h2>
+     
+      <!-- Grid de vídeos em destaque com layout fixo -->
+      <div class="video-grid">
+        <!-- Vídeo 1 -->
+        <div class="video-thumbnail" onclick="scrollToSubscription()">
+          <img src="https://placehold.co/300x200/1f1f1f/333333?text=Destaque+1" alt="Vídeo 1" class="filter blur-sm opacity-60">
+          <div class="video-overlay">
+            <i class="fa-solid fa-lock text-white fa-2x"></i>
+          </div>
+          <div class="video-info">
+            <div class="video-duration">3:45</div>
+            <div class="video-views">
+              <i class="fa-solid fa-eye" style="font-size: 0.75rem;"></i>
+              <span>842</span>
+            </div>
+          </div>
+        </div>
+       
+        <!-- Vídeo 2 -->
+        <div class="video-thumbnail" onclick="scrollToSubscription()">
+          <img src="https://placehold.co/300x200/1f1f1f/333333?text=Destaque+2" alt="Vídeo 2" class="filter blur-sm opacity-60">
+          <div class="video-overlay">
+            <i class="fa-solid fa-lock text-white fa-2x"></i>
+          </div>
+          <div class="video-info">
+            <div class="video-duration">5:12</div>
+            <div class="video-views">
+              <i class="fa-solid fa-eye" style="font-size: 0.75rem;"></i>
+              <span>1.2K</span>
+            </div>
+          </div>
+        </div>
+       
+
+      <!-- Miniaturas adicionais com layout fixo -->
+      <!-- Add live indicators to the second and third thumbnails in the grid -->
+<div class="grid grid-cols-3 gap-2 mt-3">
+  <div class="small-thumbnail" onclick="scrollToSubscription()">
+    <img src="https://placehold.co/200x200/1f1f1f/333333?text=1" alt="Conteúdo 1" class="filter blur-sm opacity-60">
+    <div class="absolute inset-0 flex items-center justify-center bg-black/30">
+      <i class="fa-solid fa-lock text-white"></i>
+    </div>
+  </div>
+  <div class="small-thumbnail relative" onclick="scrollToSubscription()">
+    <img src="https://placehold.co/200x200/1f1f1f/333333?text=2" alt="Conteúdo 2" class="filter blur-sm opacity-60" style="border: 2px solid #ef4444;">
+    <div class="absolute inset-0 flex items-center justify-center bg-black/30">
+      <i class="fa-solid fa-lock text-white"></i>
+    </div>
+    <div style="position: absolute; bottom: 5px; left: 50%; transform: translateX(-50%); background-color: #ef4444; color: white; font-size: 10px; padding: 1px 4px; border-radius: 2px; font-weight: bold; z-index: 5;">
+      AO VIVO
+    </div>
+  </div>
+  <div class="small-thumbnail relative" onclick="scrollToSubscription()">
+    <img src="https://placehold.co/200x200/1f1f1f/333333?text=3" alt="Conteúdo 3" class="filter blur-sm opacity-60" style="border: 2px solid #ef4444;">
+    <div class="absolute inset-0 flex items-center justify-center bg-black/30">
+      <i class="fa-solid fa-lock text-white"></i>
+    </div>
+    <div style="position: absolute; bottom: 5px; left: 50%; transform: translateX(-50%); background-color: #ef4444; color: white; font-size: 10px; padding: 1px 4px; border-radius: 2px; font-weight: bold; z-index: 5;">
+      AO VIVO
+    </div>
+  </div>
+</div>
+
+      <button class="btn btn-outline w-full mt-3" onclick="scrollToSubscription()">
+        Ver Todos os Vídeos
+      </button>
+    </div>
+  </main>
+
+  <!-- Footer Actions -->
+  <div class="footer-actions">
+    <button class="btn btn-ghost btn-icon">
+      <i class="fa-solid fa-heart fa-lg"></i>
+    </button>
+    <button class="btn btn-ghost btn-icon">
+      <i class="fa-solid fa-comment fa-lg"></i>
+    </button>
+    <button class="btn btn-ghost btn-icon">
+      <i class="fa-solid fa-paper-plane fa-lg"></i>
+    </button>
+  </div>
+
+  <!-- Subscription Alert Modal -->
+  <div class="modal-backdrop" id="subscription-alert-modal">
+    <div class="modal">
+      <div class="modal-body p-6 text-center">
+        <div class="mx-auto w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+          <i class="fa-solid fa-lock text-orange-500 fa-lg"></i>
+        </div>
+        <h2 class="text-xl font-semibold mb-2">Assine para Continuar</h2>
+        <p class="text-gray-600 mb-4">
+          Escolha e assine um plano antes de acessar o conteúdo.
+        </p>
+        <div class="flex gap-2">
+          <button class="btn btn-outline w-full" onclick="closeSubscriptionModal()">
+            Cancelar
+          </button>
+          <button class="btn btn-primary w-full" onclick="scrollToSubscription(); closeSubscriptionModal();">
+            Ver Planos
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  // Initialize all JS functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    // Initialize any functions from script.js
+    if (typeof initializeApp === 'function') {
+      initializeApp();
+    }
+  });
+</script>
+</body>
+</html>
